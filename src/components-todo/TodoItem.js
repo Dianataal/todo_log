@@ -8,10 +8,10 @@ const TodoItem = (props) => {
     return (
         <li>
             <Card className="todo-item">
-                <TodoDate date={props.date}></TodoDate>
+                <TodoDate date={props.date} />
                 <div className="todo-item__description">
                     <h2>{props.title}</h2>
-                    <div className="todo-item__price">{props.amount}</div>
+                    <div className="todo-item__priority">{props.priority}</div>
                 </div>
             </Card>
         </li>
@@ -19,4 +19,4 @@ const TodoItem = (props) => {
 
 }
 
-export default TodoItem
+export default TodoItem;

@@ -1,9 +1,11 @@
-.expenses-list {
+.todos-list {
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-.expenses-list__fallback {
-    color: white;
+.todos-list__fallback {
+    font-size: 1.5rem;
     text-align: center;
+    color: #888;
 }

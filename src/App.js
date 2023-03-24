@@ -31,10 +31,15 @@ function App() {
     },
   ];
 
+  const addNewTodoHandler = (newTodo) => {
+    console.log(newTodo);
+  };
+
   return (
       <div>
         <AddUser onAddUser={onAddUserHandler} />
         <UsersList users={users} />
+        <NewTodo onAddNewTodo={addNewTodoHandler} />
         <Todo todos={DUMMY_TODOS} />
       </div>
   );

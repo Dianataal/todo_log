@@ -16,10 +16,11 @@ const TodoList = (props) => {
                         title={todo.title}
                         priority={todo.priority}
                         date={todo.date}
-                    ></TodoItem>
+                    />
                 })
             }
         </ul>
     )
 }
-export default TodoList
+
+export default TodoList;

@@ -1,5 +1,5 @@
-.new-expense {
-    background-color: #a892ee;
+.new-todo {
+    background-color: #e2efde;
     padding: 1rem;
     margin: 2rem auto;
     width: 50rem;
@@ -9,30 +9,30 @@
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
-.new-expense button {
+.new-todo button {
     font: inherit;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 1px solid #40005d;
-    background-color: #40005d;
-    color: white;
+    border: 1px solid #90d08a;
+    background-color: white;
+    color: #97dc91;
     border-radius: 12px;
     margin-right: 1rem;
 }
 
-.new-expense button:hover,
-.new-expense button:active {
-    background-color: #510674;
-    border-color: #510674;
+.new-todo button:hover,
+.new-todo button:active {
+    background-color: #33ab34;
+    border-color: #90d08a;
 }
 
-.new-expense button.alternative {
-    color: #220131;
+.new-todo button.alternative {
+    color: #33ab34;
     border-color: transparent;
     background-color: transparent;
 }
 
-.new-expense button.alternative:hover,
-.new-expense button.alternative:active {
+.new-todo button.alternative:hover,
+.new-todo button.alternative:active {
     background-color: #ddb3f8;
 }

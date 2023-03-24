@@ -6,9 +6,13 @@ const NewTodo = (props) => {
     const saveTodoHandler = (enteredTodoData) => {
         const todoData = {
             ...enteredTodoData,
-            id: Math.random().toString()
+            id: Math.random().toString(),
+            isCompleted: false
         }
-        props.onAddTodo(todoData)
+        props.onAddNewTodo({
+            ...todoData,
+            priority: todoData.priority.toLowerCase()
+        });
     }
 
     return (
@@ -18,4 +22,4 @@ const NewTodo = (props) => {
     )
 }
 
-export default NewTodo
+export default NewTodo;

@@ -1,24 +1,37 @@
-.expenses-filter {
-    color: white;
-    padding: 0 1rem;
+.todo-filter {
+    color: #5e5e5e;
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
 }
 
-.expenses-filter__control {
+.todo-filter__control {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
-.expenses-filter label {
+.todo-filter label {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    color: #6c757d;
 }
 
-.expenses-filter select {
+.todo-filter select {
     font: inherit;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1.5rem;
     font-weight: bold;
     border-radius: 6px;
+    background-color: #f0f0f0;
+    color: #6c757d;
+    border: 1px solid #ced4da;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.todo-filter select:focus {
+    outline: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid #007bff;
 }

@@ -1,35 +1,46 @@
-.new-expense__controls {
+.new-todo__control {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
     margin-bottom: 1rem;
-    text-align: left;
 }
 
-.new-expense__control label {
-    font-weight: bold;
+.new-todo__control label {
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    display: block;
+    color: #7f5a83;
 }
 
-.new-expense__control input {
+.new-todo__control input,
+.new-todo__control select {
     font: inherit;
     padding: 0.5rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    width: 20rem;
-    max-width: 100%;
+    border-radius: 5px;
+    border: 2px solid #b5d2bb;
 }
 
-.new-expense__actions {
-    text-align: right;
+.new-todo__control input:focus,
+.new-todo__control select:focus {
+    outline: none;
+    border-color: #7f5a83;
 }
 
-.new-expense__control select {
+.new-todo__actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.new-todo__actions button {
     font: inherit;
-    padding: 0.5rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    width: 20rem;
-    max-width: 100%;
+    background-color: #b5d2bb;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-todo__actions button:hover,
+.new-todo__actions button:active {
+    background-color: #7f5a83;
 }
