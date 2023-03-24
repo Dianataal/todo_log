@@ -4,7 +4,7 @@ import AddUser from "./components-user/Users/AddUser";
 import UsersList from "./components-user/Users/UsersList";
 
 import Todo from "./components-todo/Todo";
-import NewTodo from "./NewTodo-todo/NewTodo";
+import NewTodo from "./components-todo/new/NewTodo";
 function App() {
   const [users, setUsers] = useState([])
 
