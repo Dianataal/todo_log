@@ -1,5 +1,5 @@
 import React from "react";
-import TodoItem from "../components-todo/TodoItem";
+import TodoItem from "../TodoItem";
 import './TodoList.css'
 
 const TodoList = (props) => {
@@ -14,7 +14,7 @@ const TodoList = (props) => {
                     return <TodoItem
                         id={todo.id}
                         title={todo.title}
-                        priority={todo.amount}
+                        priority={todo.priority}
                         date={todo.date}
                     ></TodoItem>
                 })

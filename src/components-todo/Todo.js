@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import './Todo.css'
 import Card from "./Card";
-import TodoFilter from "./TodoFilter";
-import TodoList from "./TodoList";
+import TodoFilter from "./list/TodoFilter";
+import TodoList from "./list/TodoList";
 
 const Todo = (props) => {
     const [filteredYear, setFilteredYear] = useState('2023')
