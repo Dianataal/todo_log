@@ -6,8 +6,30 @@ import UsersList from "./components-user/Users/UsersList";
 import Todo from "./components-todo/Todo";
 import NewTodo from "./components-todo/new/NewTodo";
 
-function App() {
+const DUMMY_TODOS = [
+  {
+    id: 1,
+    date: new Date(2023, 3, 22),
+    title: "React task",
+    priority: "high",
+  },
+  {
+    id: 2,
+    date: new Date(2023, 3, 24),
+    title: "Client project",
+    priority: "high",
+  }
+];
+
+const App = () => {
   const [users, setUsers] = useState([]);
+  const [listItems, setListItems] = useState(DUMMY_TODOS);
+
+  const addListItemHandler = (listItemData) => {
+    setListItems((previousListItems) => {
+      return [listItemData, ...previousListItems];
+    });
+  };
 
   const onAddUserHandler = (username, age) => {
     setUsers((prevUsers) => {
@@ -22,27 +44,14 @@ function App() {
     });
   };
 
-  const DUMMY_TODOS = [
-    {
-      id: "e1",
-      date: new Date(2023, 0, 10),
-      title: "Homework",
-      priority: "high",
-    },
-  ];
-
-  const addNewTodoHandler = (NewTodo) => {
-    console.log(NewTodo);
-  };
-
   return (
       <div>
         <AddUser onAddUser={onAddUserHandler} />
         <UsersList users={users} />
-        <NewTodo onAddNewTodo={addNewTodoHandler} />
-        <Todo todos={DUMMY_TODOS} />
+        <NewTodo onAddNewTodo={addListItemHandler} />
+        <Todo todos={listItems} />
       </div>
   );
-}
+};
 
 export default App;

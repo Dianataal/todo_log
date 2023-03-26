@@ -4,9 +4,8 @@
     align-items: center;
     font-size: 14px;
     color: #444444;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 15px;
+    justify-self: center;
 }
 
 .todo-date__month {

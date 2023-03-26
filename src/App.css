@@ -1,12 +1,8 @@
-App {
-  text-align: center;
-  justify-content: center;
-}
-
 body {
   background-color: #f9d4e0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  justify-content: center;
 }
 
 .container {
@@ -102,6 +98,7 @@ body {
   padding: 1rem;
   width: 30rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .todo h2 {
