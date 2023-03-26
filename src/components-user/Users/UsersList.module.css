@@ -1,20 +1,26 @@
 .users {
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 90%;
     max-width: 40rem;
-    border: 1px solid #4f005f;
+    border: 1px solid #d3b8ae;
+    background-color: #f8ece7;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .users ul {
     list-style: none;
     padding: 1rem;
+    margin: 0;
 }
 
 .users li {
-    border: 1px solid #4f005f;
+    border: none;
     margin: 0.5rem 0;
     padding: 0.5rem;
-    background: #4f005f;
-    color: white
+    background: #f8ece7;
+    color: #5e5e5e;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
