@@ -2,8 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 14px;
     color: #444444;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .todo-date__month {
@@ -14,14 +17,14 @@
 }
 
 .todo-date__day {
-    font-size: 3rem;
+    font-size: 14px;
     font-weight: bold;
     color: #cc7e99;
     margin-top: 0.3rem;
 }
 
 .todo-date__year {
-    font-size: 1.2rem;
+    font-size: 14px;
     color: #a6c3b7;
     margin-top: 0.3rem;
 }

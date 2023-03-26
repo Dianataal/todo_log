@@ -26,13 +26,13 @@ function App() {
     {
       id: "e1",
       date: new Date(2023, 0, 10),
-      title: "Hinded korda",
+      title: "Homework",
       priority: "high",
     },
   ];
 
-  const addNewTodoHandler = (newTodo) => {
-    console.log(newTodo);
+  const addNewTodoHandler = (NewTodo) => {
+    console.log(NewTodo);
   };
 
   return (

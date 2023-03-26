@@ -1,10 +1,10 @@
-.todo-filter {
-    color: #444444;
+.todos-filter {
+    color: #5e5e5e;
     font-size: 1.2rem;
     padding: 0 1.5rem;
 }
 
-.todo-filter__control {
+.todos-filter__control {
     display: flex;
     width: 100%;
     align-items: center;
@@ -12,26 +12,26 @@
     margin: 1.5rem 0;
 }
 
-.todo-filter label {
+.todos-filter label {
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #777777;
+    color: #6c757d;
 }
 
-.todo-filter select {
+.todos-filter select {
     font: inherit;
     padding: 0.5rem 1.5rem;
     font-weight: bold;
     border-radius: 6px;
-    background-color: #f8f3f3;
-    color: #444444;
-    border: 1px solid #d9cfcf;
+    background-color: #f0f0f0;
+    color: #6c757d;
+    border: 1px solid #ced4da;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out;
 }
 
-.todo-filter select:focus {
+.todos-filter select:focus {
     outline: none;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    border: 1px solid #bd9f9f;
+    border: 1px solid #97dc91;
 }
