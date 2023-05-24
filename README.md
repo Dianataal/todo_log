@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a to-do list application built with React. It allows users to log in and add, edit, and delete tasks, as well as filter them by priority and due date. The application is designed to be easy to use and customizable.
 
-## Available Scripts
 
-In the project directory, you can run:
+Prequisites
 
-### `npm start`
+1. Download node.js to run the app
+https://nodejs.org/en
+2. Download Cypress to run the tests
+https://docs.cypress.io/guides/getting-started/installing-cypress
+3. Download the zip file for Todolist and copy the main folder to your preferred location.
+https://github.com/Dianataal/todolist
+* 4. Download VS Code if you don't have an IDE
+https://code.visualstudio.com/download
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Node.js download
+ 
+* Go to the link and click download. You can choose the latest version.
+* Tick necessary boxes and install it into your device.
 
-### `npm test`
+Cypress download
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Create a folder in your preferred location where you want to install Cypress.
+* Open the Terminal/Command Prompt in your computer. (Use your computer's search function)
+* Write in Terminal 'cd /your/project/path' eg. my folder's location 'cd /Users/taaldiana/todolist'. (PS! add 'cd' in the beginning - it's the command that takes you into the folder) If it works, you'll see it in the Terminal.
+* Write 'npm install cypress --save-dev' in the Terminal. Cypress will now install.
+* If it finishes, a window will pop up. Congratulations! You now have Cypress!
+To reopen cypress write 'npx cypress open' in your Terminal.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Running the to-do list app 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Open the folder of the project in VS Code or your preferred IDE.
+* Open the terminal and write 'npm install' to install the necessary dependencies needed to run the app.
+* Once the installation is complete, you can write 'npm start' in the terminal to start the development server.
+* If your browser didn't open, go to Google Chrome, Edge or any other browser and write 'http://localhost:3000/' into the bar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+OLD VER(check next part) Running tests with Cypress
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Keep the app running on http://localhost:3000/ (write 'npm start' in your IDE's terminal if it closed)
+* Write in your Computer's Terminal 'npx cypress open'. A window will soon open.
+* Click on 'E2E Testing' to test the whole application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+IMPORVED: Opening Cypress through your IDE
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Go into the package.json file of your React app
+* Find the "script" section
+* Add "cypress:open": "cypress open" (Don't forget to add a comma to the previous line and save)
+* Write 'npm run cypress:open' in your IDE's terminal.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Running your Cypress test
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Choose the browser you want to run the test in.
+* Choose 'Create New Empty Spec' and click 'Create Spec'.
+* Note! Here you would write your own test but let's open the one attached to the todolist app and run spec.cy.js.
+* If the test is successful the app is working.
