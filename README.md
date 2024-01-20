@@ -47,6 +47,7 @@ OLD VER(check next part) Running tests with Cypress
 
 IMPORVED: Opening Cypress through your IDE
 
+* Keep the app running on http://localhost:3000/ (write 'npm start' in your IDE's terminal if it closed)
 * Go into the package.json file of your React app
 * Find the "script" section
 * Add "cypress:open": "cypress open" (Don't forget to add a comma to the previous line and save)
