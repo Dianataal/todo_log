@@ -48,11 +48,11 @@ const TodoForm = (props) => {
                 </div>
                 <div className='new-todo__control'>
                     <label>Date</label>
-                    <input type = 'date' min='2023-01-08' max='2023-12-31' onChange={dateChangeHandler} value={enteredDate}/>
+                    <input type = 'date' min='2023-01-08' max='2024-12-31' onChange={dateChangeHandler} value={enteredDate}/>
                 </div>
             </div>
             <div className='new-todo__actions'>
-                <button type = 'submit'>Add Task</button>
+                <button class='submit-todo' type='submit'>Add Task</button>
             </div>
         </form>
     )

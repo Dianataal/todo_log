@@ -21,7 +21,6 @@ const Todo = (props) => {
 
     return (
         <Card className="todos">
-            <TodoFilter selected={filteredYear} onChangeFilter={filterChangeHandler}></TodoFilter>
             <TodoList filteredTodos = {filteredTodos}></TodoList>
         </Card>
     )
